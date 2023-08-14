@@ -1,24 +1,18 @@
-import React from "react";
+import React,{useState}from "react";
 import EasBanner from "../components/KnowledgeBaseFaq/EasBanner";
 import AboutCardItem from "../components/AboutCard/AboutCardItem";
 import EasPriceItem from "../components/AboutCard/EasPriceItem";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
-import {FaFile} from "react-icons/fa"
-import "../Style/about.css"
+import { FaFile,FaRegPlayCircle } from "react-icons/fa";
+import "../Style/about.css";
+import Video from "../components/AboutCard/Video";
 const AboutPage = () => {
   // const videoRef = useRef(null);
-  // const [isPlaying, setIsPlaying] = useState(false);
-
-  // const handlePlayPause = () => {
-  //   const video = videoRef.current;
-  //   if (video.paused) {
-  //     video.play();
-  //   } else {
-  //     video.pause();
-  //   }
-  //   setIsPlaying(!video.paused);
-  // };
+  const [isPlaying, setIsPlaying] = useState(false);
+  const handlePlay = ()=>{
+    setIsPlaying(!isPlaying)
+  }
   return (
     <>
       {/* ============ Banner ========== */}
@@ -42,21 +36,13 @@ const AboutPage = () => {
             </p>
 
             <div className="about-video-item mt-4">
-              <button className="custom-btn">
-                <span></span>
-                View a Message from Our Founder
+              <button className="custom-btn d-flex gap-2" onClick={handlePlay}>
+                <span className="video-icon-item"><FaRegPlayCircle/></span>
+                <span>View a Message from Our Founder</span>
               </button>
             </div>
-            {/* <div className="about-video-item">
-              <video ref={videoRef} controls>
-                <source src="" type="video/mp4" />
-              </video>
-              <button onClick={handlePlayPause}>
-                {isPlaying ? "Pause" : "Play"}
-              </button>
-            </div> */}
+            <Video isPlay={isPlaying} handlePlay={handlePlay}/>
           </div>
-
           <div className="row cpt-7">
             <AboutCardItem />
           </div>
@@ -83,13 +69,22 @@ const AboutPage = () => {
                 <EasPriceItem />
               </div>
               <div className="explore-btn mt-4">
-                <Link to={'/'} className="custom-btn d-flex align-items-center gap-2"><p><FaFile/></p>
-               <span> Explore Nft use case</span>
+                <Link
+                  to={"/"}
+                  className="custom-btn d-flex align-items-center gap-2"
+                >
+                  <p>
+                    <FaFile />
+                  </p>
+                  <span> Explore Nft use case</span>
                 </Link>
               </div>
             </div>
             <div className="eas-owners-earn-right col-lg-6 col-md-6">
-              <LazyLoadImage src="/images/about/world-map.png" alt="EAS Price Image" />
+              <LazyLoadImage
+                src="/images/about/world-map.png"
+                alt="EAS Price Image"
+              />
             </div>
           </div>
           <div className="eas-price-footer-item d-flex align-items-center justify-content-center gap-2 mt-5">

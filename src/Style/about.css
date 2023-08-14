@@ -42,7 +42,9 @@
     font-family: var(--primary-font);
     margin-bottom: 15px;
 }
-
+.video-icon-item{
+    font-size: 30px;
+}
 /* =================== EAS Owners Earn ================== */
 .eas-owners-earn{
     background-color: var(--white-color);
@@ -72,3 +74,6 @@
     color: #7B92AD;
     font-size: 14px;
 }
+
+
+

@@ -20,6 +20,7 @@
     "react-fast-marquee": "^1.6.0",
     "react-icons": "^4.10.1",
     "react-lazy-load-image-component": "^1.6.0",
+    "react-loader-spinner": "^5.3.4",
     "react-open-app": "^1.0.3",
     "react-places-autocomplete": "^7.3.0",
     "react-router-dom": "^6.14.2",

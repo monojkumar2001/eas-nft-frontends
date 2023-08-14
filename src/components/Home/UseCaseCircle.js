@@ -7,8 +7,10 @@ const UseCaseCircle = () => {
     };
   return (
     <>
-        <div className="use-cases-right-item-container">
-                <div className="use-case-circle-item">
+        <div className="use-cases-right-item-container"data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+                <div className="use-case-circle-item" >
                   <div
                     className={
                       activeCircleContent === 1

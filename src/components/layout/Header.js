@@ -163,13 +163,13 @@ function Header() {
                         <Link to={"/dashboard"}>Account Dashboard</Link>
                       </li>
                       <li onClick={_toggleSidebar}>
-                        <Link to={""}>My NFTs</Link>
+                        <Link to={"/dashboard"}>My NFTs</Link>
                       </li>
                       <li onClick={_toggleSidebar}>
-                        <Link to={""}>Claim NFTs</Link>
+                        <Link to={"/dashboard"}>Claim NFTs</Link>
                       </li>
                       <li onClick={_toggleSidebar}>
-                        <Link to={""}>Refer & Earn (Coming Soon)</Link>
+                        <Link to={"/"}>Refer & Earn (Coming Soon)</Link>
                       </li>
                     </ul>
                   </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import SocialMediaLinkItem from "../SocialMediaLink/SocialMediaLinkItem";
-// import SocialMediaLinkItem from './SocialMediaLink/SocialMediaLinkItem'
+// import NftPricingPage from "../../Pages/NftPricingPage";
 
 const Footer = () => {
   return (
@@ -37,7 +37,7 @@ const Footer = () => {
                   <Link to={"/"}>Browse Marketplace</Link>
                 </div>
                 <div className="footer-link-item">
-                  <Link to={"/"}>Address NFTs</Link>
+                  <Link to={"/address-nfts"}>Address NFTs</Link>
                 </div>
                 <div className="footer-link-item">
                   <Link to={"/"}>Neighborhood NFTs</Link>
@@ -46,32 +46,32 @@ const Footer = () => {
                   <Link to={"/"}>Charity NFTs</Link>
                 </div>
                 <div className="footer-link-item">
-                  <Link to={"/"}>Pricing</Link>
+                  <Link to={"/nft-pricing"}>Pricing</Link>
                 </div>
                 <div className="footer-link-item">
-                  <Link to={"/"}>Use Cases</Link>
+                  <Link to={"/nft-use-cases"}>Use Cases</Link>
                 </div>
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
               <div className="footer-item-fluid">
                 <div className="footer-link-item">
-                  <Link to={"/"}>About</Link>
+                  <Link to={"/about"}>About</Link>
                 </div>
                 <div className="footer-link-item">
-                  <Link to={"/"}>Contact</Link>
+                  <Link to={"/contact"}>Contact</Link>
                 </div>
                 <div className="footer-link-item">
                   <Link to={"/"}>News</Link>
                 </div>
                 <div className="footer-link-item">
-                  <Link to={"/"}>FAQ & Support</Link>
+                  <Link to={"/docs"}>FAQ & Support</Link>
                 </div>
                 <div className="footer-link-item">
                   <Link to={"/"}>Careers</Link>
                 </div>
                 <div className="footer-link-item">
-                  <Link to={"/"}>Account</Link>
+                  <Link to={"/dashboard"}>Account</Link>
                 </div>
               </div>
             </div>

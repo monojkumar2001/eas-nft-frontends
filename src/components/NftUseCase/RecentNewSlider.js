@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Navigation, Pagination, A11y } from "swiper/modules";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import {Pagination, A11y } from "swiper/modules";
 import RecentNewsItem from "./RecentNewsItem";
 const RecentNewSlider = () => {
   return (
@@ -17,7 +16,10 @@ const RecentNewSlider = () => {
             <Swiper
               spaceBetween={20}
               slidesPerView={3}
-              modules={[Navigation, Pagination, A11y]}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Pagination, A11y]}
               breakpoints={{
                 450: {
                   slidesPerView: 1,
@@ -32,121 +34,58 @@ const RecentNewSlider = () => {
                   slidesPerView: 3,
                 },
               }}
-              Navigation={{
-                prevEl: ".prev",
-                nextEl: ".next",
-              }}
             >
               <SwiperSlide>
-             <RecentNewsItem
-             date="JUNE 5, 2023"
-             title="EAS Launches Platform to Map the World’s Addresses as
+                <RecentNewsItem
+                  date="JUNE 5, 2023"
+                  title="EAS Launches Platform to Map the World’s Addresses as
              NFT-based Digital Rights"
-             dis=" Ethereum Address Service (“EAS”) is thrilled to announce
+                  dis=" Ethereum Address Service (“EAS”) is thrilled to announce
              the launch of its ground-breaking platform..."
-             />
+                  imgs="/images/use-cases/slider-1.jpg"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                {/* <div className="recent-new-slider-con">
-                  <button className="alt-custom-btn">Press Releases</button>
-                  <div className="recent-item-content">
-                    <p>JUNE 5, 2023</p>
-                    <h3>
-                      EAS Launches Platform to Map the World’s Addresses as
-                      NFT-based Digital Rights
-                    </h3>
-                    <span>
-                      Ethereum Address Service (“EAS”) is thrilled to announce
-                      the launch of its ground-breaking platform...
-                    </span>
-                  </div>
-                </div> */}
-                    <RecentNewsItem
-             date="JUNE 5, 2023"
-             title="EAS Launches Platform to Map the World’s Addresses as
+                <RecentNewsItem
+                  date="JUNE 5, 2023"
+                  title="EAS Launches Platform to Map the World’s Addresses as
              NFT-based Digital Rights"
-             dis=" Ethereum Address Service (“EAS”) is thrilled to announce
+                  dis=" Ethereum Address Service (“EAS”) is thrilled to announce
              the launch of its ground-breaking platform..."
-             />
+                  imgs="/images/use-cases/slider-2.avif"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                {/* <div className="recent-new-slider-con">
-                  <button className="alt-custom-btn">Press Releases</button>
-                  <div className="recent-item-content">
-                    <p>JUNE 5, 2023</p>
-                    <h3>
-                      EAS Launches Platform to Map the World’s Addresses as
-                      NFT-based Digital Rights
-                    </h3>
-                    <span>
-                      Ethereum Address Service (“EAS”) is thrilled to announce
-                      the launch of its ground-breaking platform...
-                    </span>
-                  </div>
-                </div> */}
-                 <RecentNewsItem
-             date="JUNE 5, 2023"
-             title="EAS Launches Platform to Map the World’s Addresses as
+                <RecentNewsItem
+                  date="JUNE 5, 2023"
+                  title="EAS Launches Platform to Map the World’s Addresses as
              NFT-based Digital Rights"
-             dis=" Ethereum Address Service (“EAS”) is thrilled to announce
+                  dis=" Ethereum Address Service (“EAS”) is thrilled to announce
              the launch of its ground-breaking platform..."
-             />
+                  imgs="/images/use-cases/slider-3.jpg"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                {/* <div className="recent-new-slider-con">
-                  <button className="alt-custom-btn">Press Releases</button>
-                  <div className="recent-item-content">
-                    <p>JUNE 5, 2023</p>
-                    <h3>
-                      EAS Launches Platform to Map the World’s Addresses as
-                      NFT-based Digital Rights
-                    </h3>
-                    <span>
-                      Ethereum Address Service (“EAS”) is thrilled to announce
-                      the launch of its ground-breaking platform...
-                    </span>
-                  </div>
-                </div> */}
-                   <RecentNewsItem
-             date="JUNE 5, 2023"
-             title="EAS Launches Platform to Map the World’s Addresses as
+                <RecentNewsItem
+                  date="JUNE 5, 2023"
+                  title="EAS Launches Platform to Map the World’s Addresses as
              NFT-based Digital Rights"
-             dis=" Ethereum Address Service (“EAS”) is thrilled to announce
+                  dis=" Ethereum Address Service (“EAS”) is thrilled to announce
              the launch of its ground-breaking platform..."
-             />
+                  imgs="/images/use-cases/slider-4.jpg"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                {/* <div className="recent-new-slider-con">
-                  <button className="alt-custom-btn">Press Releases</button>
-                  <div className="recent-item-content">
-                    <p>JUNE 5, 2023</p>
-                    <h3>
-                      EAS Launches Platform to Map the World’s Addresses as
-                      NFT-based Digital Rights
-                    </h3>
-                    <span>
-                      Ethereum Address Service (“EAS”) is thrilled to announce
-                      the launch of its ground-breaking platform...
-                    </span>
-                  </div>
-                </div> */}
-                     <RecentNewsItem
-             date="JUNE 5, 2023"
-             title="EAS Launches Platform to Map the World’s Addresses as
+                <RecentNewsItem
+                  date="JUNE 5, 2023"
+                  title="EAS Launches Platform to Map the World’s Addresses as
              NFT-based Digital Rights"
-             dis=" Ethereum Address Service (“EAS”) is thrilled to announce
+                  dis=" Ethereum Address Service (“EAS”) is thrilled to announce
              the launch of its ground-breaking platform..."
-             />
+                  imgs="/images/use-cases/slider-5.jpg"
+                />
               </SwiperSlide>
             </Swiper>
-            <div className="slider-nav">
-              <div className="prev">
-                <FaChevronLeft />
-              </div>
-              <div className="next">
-                <FaChevronRight />
-              </div>
-            </div>
           </div>
         </div>
       </section>

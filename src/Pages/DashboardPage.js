@@ -45,7 +45,7 @@ const DashboardPage = () => {
                           }}
                         >
 
-                          <div 
+                          <Link to=""
                             className="filter-left-items d-flex align-items-center gap-2 "
                             onClick={toggleFilterMenu}
                           >
@@ -53,7 +53,7 @@ const DashboardPage = () => {
                               <img src="/images/dashboard/account.svg" alt="" />
                             </div>
                             <span>Account Details</span>
-                          </div>
+                          </Link>
                         </div>
                       </div>
                       <div className="filter-list-item">

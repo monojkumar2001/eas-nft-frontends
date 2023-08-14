@@ -1,13 +1,13 @@
-import React, {useEffect, useRef, useState} from 'react'
+import React, { useState} from 'react'
 import PlacesAutocomplete, {
   geocodeByAddress,
   getLatLng,
 } from 'react-places-autocomplete';
 import axios from 'axios'
 import Swal from 'sweetalert2';
-const mapApiJs = "https://maps.googleapis.com/maps/api/js";
-const geocodeJson = "https://maps.googleapis.com/maps/api/geocode/json";
-const apiKey ='AIzaSyC9LN9PnRFUQgfYCF-MxzvvJ914d7aS3JI';
+// const mapApiJs = "https://maps.googleapis.com/maps/api/js";
+// const geocodeJson = "https://maps.googleapis.com/maps/api/geocode/json";
+// const apiKey ='AIzaSyC9LN9PnRFUQgfYCF-MxzvvJ914d7aS3JI';
 // import 
 // console.log(apiKey); 
 
@@ -81,7 +81,7 @@ const DynamicForm = () => {
           >
             {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
               <div>
-                <input
+                <input className='input-text-item'
                   {...getInputProps({ placeholder: 'Enter a location...' })}
                 />
                 <div>
@@ -98,10 +98,11 @@ const DynamicForm = () => {
               </div>
             )}
           </PlacesAutocomplete>
-          <button type="button" onClick={() => handleRemoveField(field.id)}>
+          {/* <button type="button" onClick={() => handleRemoveField(field.id)}>
             Remove Field
-          </button>
+          </button> */}
         </div>
+        
       ))}
     </div>
           

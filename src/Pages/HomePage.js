@@ -34,8 +34,12 @@ function HomePage() {
             <div className="claim-my-nft-item">
               <button className="custom-btn">CLAIM MY NFT</button>
             </div>
+            <div className="hero-map-img">
+              <LazyLoadImage src="/images/home/map-3d.png" />
+            </div>
           </div>
         </div>
+
         <div className="hero-bg-hover"></div>
       </section>
 
@@ -46,7 +50,7 @@ function HomePage() {
       <section className="about_us cpb-6">
         <div className="container">
           <div className="about_us_wrapper row">
-            <div className="about_us_left_site col-lg-7 col-md-12">
+            <div className="about_us_left_site col-lg-6 col-md-12">
               <span className="focus-color">About us</span>
               <h1 className="section-title-2 mb-4">
                 EAS is mapping the world’s addresses as tradable NFTs.
@@ -64,8 +68,27 @@ function HomePage() {
                 learn more
               </Link>
             </div>
-            <div className="about_us_right_site col-lg-5 col-md-12">
-              <LazyLoadImage src="/images/home/about-us-img.svg" />
+            <div className="col-lg-6 col-md-12">
+              <div className="about_us_right_sites">
+                <div
+                  className="about-1-img"
+                  data-aos="fade-left"
+                  data-aos-anchor="#example-anchor"
+                  data-aos-offset="300"
+                  data-aos-duration="2000"
+                >
+                  <LazyLoadImage src="/images/home/about-1.webp" />
+                </div>
+                <div
+                  className="about-2-img"
+                  data-aos="fade-left"
+                  data-aos-anchor="#example-anchor"
+                  data-aos-offset="500"
+                  data-aos-duration="3000"
+                >
+                  <LazyLoadImage src="/images/home/about-2.png" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -82,12 +105,12 @@ function HomePage() {
               <h1 className="section-title-2 mb-4">
                 How Does My EAS NFT Make <span>Money?</span>
               </h1>
-              <p>
+              <p className="pb-3">
                 When many people hear “NFT” they may think of silly overpriced
                 monkey doodles. But the reality is that the actual technological
                 power of non-fungible tokens on the blockchain goes{" "}
                 <span className="focus-color-2">
-                  <Link to={""}>SO far beyond</Link>
+                  <Link to={"/nft-use-cases"}>SO far beyond</Link>
                 </span>{" "}
                 just artwork alone.
               </p>
@@ -96,12 +119,12 @@ function HomePage() {
                 certify ownership and authenticity, and cannot be copied or
                 substituted. EAS puts the real intended power of NFTs to use.
               </p>
-              <div className="use-cases-item-list">
+              <div className="use-cases-item-list mt-3">
                 <p>
                   EAS NFTs generate royalties and revenue from three primary use
                   cases:
                 </p>
-                <ul>
+                <ul className="mt-3">
                   <li>Gaming & Mapping</li>
                   <li>Market Intelligence</li>
                   <li>Liquid Pricing Comparables</li>
@@ -110,7 +133,12 @@ function HomePage() {
               </div>
             </div>
             <div className="use-cases-right-item col-lg-6 col-md-12">
-          <UseCaseCircle/>
+              <UseCaseCircle />
+            </div>
+            <div className="learn-more-btns">
+              <button className="custom-btn about-use-cases-btn">
+                LEARN MORE ABOUT USE CASES
+              </button>
             </div>
           </div>
         </div>
@@ -145,7 +173,10 @@ function HomePage() {
             </div>
             <div className="col-lg-5 col-md-12">
               <div className="faq-question-img">
-                <LazyLoadImage src="/images/home/faq-question-img.svg" />
+                <LazyLoadImage
+                  className="sfdfsd"
+                  src="/images/home/faq-question-img.svg"
+                />
               </div>
             </div>
           </div>
@@ -177,7 +208,13 @@ function HomePage() {
               </div>
             </div>
             <div className="col-lg-5 col-md-12">
-              <div className="eas-affiliate-img">
+              <div
+                className="eas-affiliate-img"
+                data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="300"
+                data-aos-duration="2000"
+              >
                 <LazyLoadImage src="/images/home/affiliate-img.svg" />
               </div>
             </div>

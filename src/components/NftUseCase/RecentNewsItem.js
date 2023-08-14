@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
-const RecentNewsItem = ({date, title, dis}) => {
+const RecentNewsItem = ({date, title, dis,imgs}) => {
   return (
     <>
       <div className="recent-new-slider-con recent-new-slider-con-2">
@@ -26,6 +26,9 @@ const RecentNewsItem = ({date, title, dis}) => {
             </div>
           </div>
         </Link>
+  <div className="recent-bg-img">
+  <img src={imgs} alt="" />
+  </div>
       </div>
     </>
   );

@@ -9,7 +9,7 @@ const HeroCardItem = () => {
                 <div className="col-lg-4 col-md-6 col-sm-12 hero-card-item" key={i}>
                 <div className="mx-3">
                     <h3>{item.title}</h3>
-                    <p>{item.description}</p>
+                    <p className="hero-discs">{item.description}</p>
                 </div>
               </div>
             )
