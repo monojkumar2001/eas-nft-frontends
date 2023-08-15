@@ -347,47 +347,7 @@ span.swiper-pagination-bullet {
 .recent-new-slider-con:hover .recent-item-content h3{
     color: var(--main-color);
 }
-/* .swiper-wrapper .swiper-slide .recent-new-slider-con:nth-child(1)::before{
-    border-radius: 6px;
-    background-image: url(../../public/images/use-cases/slider-1.jpg);
-    width: 100%;
-    height: 100%;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: cover;
-    background-position: center center;
-    transform: scale(1);
-    will-change: transform;
-    transition: all 0.45s ease;
-    z-index: -1;
-} */
-.swiper-wrapper .swiper-slide .recent-new-slider-con:nth-child(2)::before{
-    border-radius: 6px;
-    background-image: url(../../public/images/use-cases/slider-3.jpg);
-    width: 100%;
-    height: 100%;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: cover;
-    background-position: center center;
-    transform: scale(1);
-    will-change: transform;
-    transition: all 0.45s ease;
-    z-index: -1;
-}
 
-*/.recent-news-content .alt-custom-btn{
-    width: fit-content;
-    font-size: 14px;
-}
 .recent-new-slider-con:hover .recent-news-content .alt-custom-btn{
     border: 1px solid rgb(214, 214, 214);
 }

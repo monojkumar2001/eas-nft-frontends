@@ -20,10 +20,10 @@
     font-family:'DM Sans';
     src: url(../../../public/fonts/DMSans-Regular.ttf);
   }
-  /*===== VARIABLES CSS =====*/
+
 
   :root {
-    /*========== Colors ==========*/
+
     --main-color: #00CDDF;
     --black-color: #141820 ;
     --white-color: #ffffff;
@@ -85,10 +85,9 @@
       font-size: 30px;
     }
   }
-  
-  /* ==================CSS Variable END========= */
 
-  /*========== BASE ==========*/
+
+
   
   *,
   ::before,
@@ -102,9 +101,7 @@
   p{
     margin-bottom: 0 !important;
   }
-  /* .app-con {
-    overflow: hidden;
-} */
+
 html{
   scroll-behavior: smooth;
 }
@@ -141,7 +138,7 @@ body {
     outline: none;
   }
   
-  /* ============================GENERAL STYLE END======= */
+
   
   h1,
   h2,
@@ -165,7 +162,7 @@ body {
     white-space: nowrap;
   }
   
-  /* ===================custom button============ */
+
   
   .custom-btn {
     border: none;
@@ -211,8 +208,7 @@ body {
     background-color: var(--main-color);
   }
   
-  /* ===================custom button end=============== */
-  /* =============padding margin class============= */
+
   
   .cpy-5 {
     padding: 50px 0;

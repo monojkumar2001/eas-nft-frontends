@@ -8,7 +8,6 @@ import "../Style/addressnft.css";
 const AddressNFTsPage = () => {
   return (
     <>
-      {/*  ================== Address Nfts ================= */}
       <section className="address-nfts">
         <div className="container">
           <div className="address-nfts-wrapper row">
@@ -99,7 +98,7 @@ const AddressNFTsPage = () => {
                   Each custom Address NFT you claim is a flat price of 0.02 ETH
                   + gas.
                 </p>
-                <Link to={'/'} className="nft-pricing-nft-link">
+                <Link to={'/nft-pricing'} className="nft-pricing-nft-link">
                   View Full NFT pricing guide{" "}
                   <span>
                     <FaChevronRight />
