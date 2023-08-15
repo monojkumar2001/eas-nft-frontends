@@ -20,7 +20,7 @@ import AboutPage from "./Pages/AboutPage";
 import ContactPage from "./Pages/ContactPage";
 import HomePage from "./Pages/HomePage";
 import LoginRegisterPage from "./Pages/LoginRegisterPage";
-// import NewsPage from "./Pages/NewsPage";
+import NewsPage from "./Pages/NewsPage";
 
 function App() {
   useEffect(() => {
