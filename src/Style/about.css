@@ -76,4 +76,40 @@
 }
 
 
+/*  ====================responsive about page==================  */
+
+@media screen and (max-width: 768px) {
+    .col-md-6{
+        margin-bottom: 30px;
+    }
+  }
+@media screen and (max-width: 768px) {
+    .col-md-6{
+        margin-bottom: 30px;
+    }
+    .eas-price-footer-item{
+        flex-direction: column;
+        gap: 20px;
+    }
+  }
+  
+@media screen and (max-width: 576px) {
+
+    .section-title{
+        font-size: 33px;
+    }
+    .about-eas-content {
+        width: 100%;
+    }
+    .about-description h4 {
+        font-size: 18px;
+    }
+    .focus-color {
+        letter-spacing: 0.1em;
+    }
+    .eas-price-footer-item {
+    margin-top: 20px !important;
+    }
+  }
+
 

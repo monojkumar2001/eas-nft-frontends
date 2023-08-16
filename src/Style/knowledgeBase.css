@@ -1,6 +1,10 @@
 @import url(../Style/global/global.css);
 .knowledge-base-banner {
   width: 100%;
+  padding: 200px 0 150px 0;
+  background-image: url(../../public/images/knowledge-base/knowledge-banner-img.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .knowledge-base-banner-wrapper {
   width: 100%;
@@ -13,13 +17,14 @@
 .knowledge-base-banner-wrapper .eas-knowledge-title {
   position: absolute;
   font-size: 44px;
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   width: 80%;
   margin: auto;
   display: flex;
+  font-weight: 900;
   align-items: center;
   justify-content: center;
-  padding: 100px 0;
+  text-align: center;
 }
 .knowledge-base-banner-wrapper .eas-knowledge-banner-img {
   width: 100%;
@@ -186,4 +191,23 @@
 }
 .faq-help-model-item .faq-help-model-item-btn{
  width: fit-content;
+}
+
+
+
+/* ================================== */
+
+
+@media screen and (max-width: 768px) {
+  .knowledge-base-banner {
+    width: 100%;
+    padding: 120px 0 100px 0;
+    background-image: url(../../public/images/knowledge-base/knowledge-banner-img.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .knowledge-base-banner-wrapper .eas-knowledge-title {
+    font-size: 30px;
+    /* padding: 100px 0; */
+}
 }

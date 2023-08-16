@@ -75,7 +75,7 @@ function HomePage() {
                   data-aos="fade-left"
                   data-aos-anchor="#example-anchor"
                   data-aos-offset="300"
-                  data-aos-duration="2000"
+                  data-aos-duration="500"
                 >
                   <LazyLoadImage src="/images/home/about-1.webp" />
                 </div>
@@ -83,10 +83,18 @@ function HomePage() {
                   className="about-2-img"
                   data-aos="fade-left"
                   data-aos-anchor="#example-anchor"
-                  data-aos-offset="500"
                   data-aos-duration="3000"
                 >
                   <LazyLoadImage src="/images/home/about-2.png" />
+                </div>
+                <div
+                  className="about-3-img"
+                  data-aos="fade-left"
+                  data-aos-anchor="#example-anchor"
+                  data-aos-offset="500"
+                  data-aos-duration="3000"
+                >
+                  <LazyLoadImage src="/images/home/about-us-img.svg" />
                 </div>
               </div>
             </div>

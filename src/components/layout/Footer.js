@@ -2,6 +2,7 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import SocialMediaLinkItem from "../SocialMediaLink/SocialMediaLinkItem";
+import { NavLink } from "react-router-dom";
 // import NftPricingPage from "../../Pages/NftPricingPage";
 
 const Footer = () => {
@@ -12,7 +13,7 @@ const Footer = () => {
           <div className="footer-wrapper row ">
             <div className="col-lg-3 col-md-6">
               <div className="footer-item-fluid footer-items-content d-flex text-center algin-items-center justify-content-center flex-column">
-                <Link to={"/"}>
+                <Link to={"/"} className="eas-nft-img">
                   <LazyLoadImage src="/images/footer/footer-logo.svg" />
                 </Link>
                 <p>
@@ -31,7 +32,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-3 col-md-6 footer-item-fluid-m">
               <div className="footer-item-fluid">
                 <div className="footer-link-item">
                   <Link to={"/"}>Browse Marketplace</Link>
@@ -49,11 +50,11 @@ const Footer = () => {
                   <Link to={"/nft-pricing"}>Pricing</Link>
                 </div>
                 <div className="footer-link-item">
-                  <Link to={"/nft-use-cases"}>Use Cases</Link>
+                  <NavLink to={"/nft-use-cases"}>Use Cases</NavLink>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-3 col-md-6 footer-item-fluid-m">
               <div className="footer-item-fluid">
                 <div className="footer-link-item">
                   <Link to={"/about"}>About</Link>

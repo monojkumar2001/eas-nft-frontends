@@ -20,7 +20,15 @@ import AboutPage from "./Pages/AboutPage";
 import ContactPage from "./Pages/ContactPage";
 import HomePage from "./Pages/HomePage";
 import LoginRegisterPage from "./Pages/LoginRegisterPage";
+import MyCollectionPage from "./Pages/MyCollectionPage";
+import NFTDetailsPage from "./Pages/NFTDetailsPage";
+import CollectionPage from "./Pages/CollectionPage";
+import ScrollTopBtn from "./components/ScrollToTop/ScrollTopBtn";
+import NewsPage from "./Pages/NewsPage";
+import NftSaleCollectionPage from "./Pages/NftSaleCollectionPage";
+import ErrorPage from "./Pages/ErrorPage";
 // import NewsPage from "./Pages/NewsPage";
+
 
 function App() {
   useEffect(() => {
@@ -32,6 +40,7 @@ function App() {
 
   return (
     <div className="app-con">
+        <ScrollTopBtn/>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -45,7 +54,12 @@ function App() {
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>
           <Route path="/login-register" element={<LoginRegisterPage/>}/>
-          {/* <Route path="/news" element ={<NewsPage/>}/> */}
+          <Route path="/nft-collection" element={<CollectionPage/>}/>
+          <Route path="/nft-details" element={<NFTDetailsPage/>}/>
+          <Route path="/my-nft-list" element ={<MyCollectionPage/>}/>
+          <Route path="/news" element ={<NewsPage/>}/>
+          <Route path="/sale-nft" element ={<NftSaleCollectionPage/>}/>
+          <Route path="*" element ={<ErrorPage/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

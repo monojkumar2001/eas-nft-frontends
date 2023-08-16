@@ -1,0 +1,15 @@
+.news-page{
+    background-color: var(--white-color);
+    color: #2C2C2C;
+}
+.news-page .news-header-section{
+        text-align: center;
+        width: 55%;
+     margin: auto;   
+     color: var(--black-color);
+}
+.news-page .news-header-section h2{
+    font-size: 40px;
+    font-family: var(--secondary-font);
+    margin-bottom: 30px;
+}

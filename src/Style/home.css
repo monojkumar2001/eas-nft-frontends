@@ -143,6 +143,7 @@
   font-size: 26px;
   font-family: var(--third-font);
   margin-bottom: 15px;
+  font-weight:900;
 }
 .hero-card-itemss p {
   color: #bdbad7;
@@ -200,7 +201,9 @@
   z-index: 2;
   position: absolute;
 }
-
+.about-3-img{
+  display: none;
+}
 /* ==================== NFT Collection ===========  */
 .nft-collections {
   background-image: url(../../public/images/home/nft-collection-img.svg);
@@ -238,6 +241,11 @@
   padding: 10px;
   font-size: 22px;
   border-radius: 50%;
+}
+.nft-collection-item-content h4{
+  font-family: var(--primary-font);
+  margin-bottom: 15px;
+  font-size: 20px;
 }
 /* =====================  NFT USE CASES ==================== */
 .focus-color-2 a {
@@ -358,7 +366,7 @@
 }
 /* ========================= FAQ QUESTION  ================== */
 .faq-row-wrapper {
-  background-color: var(--faq-bg-color, transparent);
+  background-color: var(--faq-bg-color, none) !important;
 }
 .faq-row {
   margin-bottom: 30px;
@@ -439,4 +447,133 @@
   margin: auto;
   display: flex;
   align-items: center;
+}
+
+
+
+
+
+
+/* ==================== Responsive ============== */
+@media screen and (max-width: 1300px) {
+  .about_us_wrapper .about_us_right_sites .about-3-img{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+.about_us_wrapper .about_us_right_sites .about-3-img img{
+  width: 80%;
+}
+.about-1-img {
+display: none;
+}
+.about-2-img {
+display: none;
+}
+.nft-collections {
+  background-position: 103px 186px;
+  background-repeat: no-repeat;
+  background-size: 1400px auto;
+  padding-bottom: 150px;
+}
+}
+@media screen and (max-width: 992px) {
+  .hero-card .hero-card-items .hero-card-item {
+    margin-bottom: 52px;
+}
+.faq-question-img {
+  margin-top: 50px;
+}
+}
+@media screen and (max-width: 768px) {
+  .hero-wrapper .hero-title {
+      font-size: 50px;
+  }
+  .address-input-fluid {
+    width: 100%;
+}
+.hero-map-img {
+display: none;
+}
+.hero {
+  padding: 100px 0;
+}
+.hero-card-footer-text {
+  width: 100%;
+  margin: auto;
+}
+.nft-collections {
+  background-position: -203px 186px;
+  background-repeat: no-repeat;
+  background-size: 1000px auto;
+  padding-bottom: 150px;
+}
+.row-title-text {
+  font-size: 18px;
+}
+.eas-affiliate-img {
+  margin-top: 40px;
+}
+}
+@media screen and (max-width: 576px) {
+  .hero-wrapper .hero-title {
+      font-size: 35px;
+  }
+  .about_us_wrapper .about_us_right_sites .about-3-img{
+    margin-top: 50px;
+}
+.nft-collections {
+  background-position: -203px 500px;
+  background-repeat: no-repeat;
+  background-size: 800px auto;
+  padding-bottom: 150px;
+}
+
+.use-cases-right-item-container {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  border: none;
+  width: 100%;
+  height:100%;
+}
+
+.use-case-circle-item {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 30px;
+  border: 2px solid #f5f3ff;
+}
+#circle-btn-1 {
+  position: inherit;
+}
+#circle-btn-2 {
+  position: inherit;
+}
+#circle-btn-3 {
+  position: inherit;
+}
+.use-case-circle-btn-content {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+#circle-btn-4 {
+  /* bottom: 2%; */
+  /* right: 2%; */
+  position: inherit;
+}
 }

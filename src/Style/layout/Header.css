@@ -186,7 +186,46 @@ li.nav-list {
   justify-content: center;
   padding: 15px 0;
 }
+.modal-backdrop {
+  z-index: 0;
+}
 
+/* ========================= Wallet Connect ========== */
+.wallet-connect-content{
+  background-color: var(--white-color);
+}
+.wallet-connect-content .modal-title{
+  font-family: var(--secondary-font);
+  color: var(--black-color);
+}
+.wallet-content-wrapper .connect-wallet-item{
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border: none;
+  transition: all ease-in-out 0.4s;
+  padding: 15px 0;
+  border-radius: 7px;
+  border: 1px solid rgba(18, 18, 18, 0.12);
+}
+.wallet-content-wrapper .connect-wallet-item:hover{
+  background-color:var(--main-color);
+  color: var(--white-color);
+}
+.wallet-connect-content .connect-wallet-item .wallet-img{
+width: 50px;
+height: 50px;
+}
+.wallet-connect-content .connect-wallet-item .wallet-img img{
+width: 100%;
+}
+.wallet-connect-content .connect-wallet-item h4{
+font-size: 20px;
+font-family: var(--third-font);
+font-weight: 900;
+}
+.wallet-connect-content .connect-wallet-item span{
+  font-size: 18px;
+}
 @media screen and (max-width: 1650px) {
   nav.navigation {
     grid-template-columns: 44% 45%;
@@ -210,6 +249,11 @@ li.nav-list {
     width: 100px;
 }
 }
+@media screen and (max-width: 1340px) {
+  ul.menu-nav-ul .left-side {
+    gap: 26px;
+}
+}
 @media screen and (max-width: 1300px) {
   nav.navigation {
     grid-template-columns: 35% 40%;
@@ -224,7 +268,11 @@ li.nav-list {
     justify-content: center;
     margin: auto;
 }
-
+.header {
+  background-color: #141820;
+  height: 60px;
+  transition: top 1s ease;
+}
 
   nav.navigation {
     grid-template-columns: 93%;
@@ -276,16 +324,17 @@ li.nav-list {
     bottom: 0;
     box-shadow: -2px 5px 13px 0px #0b0c11;
     top: 0;
-    padding: 80px 20px;
+    padding: 80px 100px;
     transition: 0.5s;
     right: -125%;
     z-index: 1;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(100px);
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items:flex-start;
     justify-content: center;
     text-align: center;
+    
   }
   ul.menu-nav-ul {
     border: none;
@@ -321,6 +370,7 @@ li.nav-list {
   }
   nav.navigation .logo img {
     width: 80px;
+    padding-top: 10px;
 }
 
 a.nav-link.active {
@@ -338,21 +388,32 @@ li.nav-list.active .dp-menu {
 .dp-menu{
   width: 300px;
   position: sticky;
-  background: var(--white-color);
+  background: none;
   border-radius: 12px;
   transform: translateY(5px);
   transition: 0.3s;
   opacity: 1;
-  padding: 20px 30px;
+  padding: 0px 10px;
   visibility: visible;
   overflow: hidden;
   box-shadow: 10px 10px 10px rgb(0 0 0 / 10%);
   z-index: 99;
   top: 0px;
 }
+.dp-menu-ul li a {
+  color: var(--white-color);
+  font-size: 16px;
+  font-family: var(--secondary-font) !important;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: var(--body-font);
+}
 li.nav-list {
   padding: 10px 0;
   flex-direction: column;
+}
+li.nav-list a {
+  line-height: 20px;
 }
 ul.menu-nav-ul .left-side {
   gap: 10px;

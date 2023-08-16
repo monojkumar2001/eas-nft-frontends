@@ -6,9 +6,6 @@ const EasBanner = ({title}) => {
       <div className="knowledge-base-banner">
         <div className="knowledge-base-banner-wrapper">
           <h2 className="eas-knowledge-title">{title}</h2>
-          <div className="eas-knowledge-banner-img">
-            <LazyLoadImage src="/images/knowledge-base/knowledge-banner-img.svg" />
-          </div>
         </div>
       </div>
     </>

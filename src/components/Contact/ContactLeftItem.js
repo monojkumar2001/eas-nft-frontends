@@ -9,6 +9,8 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const ContactLeftItem = () => {
   return (
     <>
@@ -79,10 +81,13 @@ const ContactLeftItem = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12"></div>
-          <div className="col-lg-6 col-md-6"></div>
         </div>
       </div>
+      <div className="opensea-img-item d-flex justify-content-center mt-4">
+         <Link to={'https://opensea.io/collection/ethereum-address-service'} target="_blank" className="opensea-imgs">
+            <LazyLoadImage src="/images/contact/opensea.webp" />
+           </Link>
+         </div>
     </>
   );
 };

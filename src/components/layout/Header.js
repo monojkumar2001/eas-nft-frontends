@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import WalletConnet from "../Collection/WalletConnet";
 function Header() {
   const [isSticky, setSticky] = useState(false);
   const [sidebarActive, setSidebarActive] = useState(false);
@@ -77,14 +78,15 @@ function Header() {
                         <Link to={"/address-nfts"}>Address NFTs</Link>
                       </li>
                       <li onClick={_toggleSidebar}>
-                        <Link to={""}>Charity NFTs</Link>
+                        <Link to={"/nft-collection"}>NFT Collection</Link>
                       </li>
                       <li onClick={_toggleSidebar}>
-                        <Link to={""}>Neighborhood NFTs</Link>
+                        <Link to={"/my-nft-list"}>My NFT List</Link>
                       </li>
                       <li onClick={_toggleSidebar}>
-                        <Link to={""}>Browse NFT Marketplace</Link>
+                        <Link to={"/sale-nft"}>Sale Nft</Link>
                       </li>
+
                     </ul>
                   </div>
                 </li>
@@ -139,7 +141,7 @@ function Header() {
                   </div>
                 </li>
                 <li className="nav-list" onClick={_toggleSidebar}>
-                  <Link to="" className="nav-link">
+                  <Link to="/news" className="nav-link">
                     News
                   </Link>
                 </li>
@@ -177,7 +179,7 @@ function Header() {
               </div>
 
               <div className="left-side d-flex algin-items-center">
-                <button className="custom-btn">Connect wallet</button>
+              <WalletConnet/>
               </div>
             </ul>
           </div>

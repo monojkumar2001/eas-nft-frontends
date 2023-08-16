@@ -21,7 +21,7 @@ const RecentNewSlider = () => {
               }}
               modules={[Pagination, A11y]}
               breakpoints={{
-                450: {
+                300: {
                   slidesPerView: 1,
                 },
                 680: {
