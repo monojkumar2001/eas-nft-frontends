@@ -385,7 +385,7 @@
   .styles_row-title__1YiiY
   .styles_icon-wrapper__2cftw
   svg {
-  fill: white;
+  fill: white !important;
 }
 .row-title-text {
   color: var(--white-color);
@@ -406,10 +406,7 @@
   .styles_faq-row__2YF3c
   .styles_row-content__QOGZd
   .styles_row-content-text__2sgAB {
-  color: var(--row-content-color, white);
-  font-size: var(--row-content-text-size, medium);
-  padding: var(--row-content-padding-top, 0) var(--row-content-padding-right, 0)
-    var(--row-content-padding-bottom, 0) var(--row-content-padding-left, 0);
+  color: var(--row-content-color, white) !important;
 }
 .faq-question-img {
   position: relative;

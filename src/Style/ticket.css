@@ -345,3 +345,52 @@ border-radius: 50%;
 .ticket-model-input-fluid label{
     margin-bottom: 10px;
 }
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .ticket-header-left-item .form-group .form-control {
+        width:100%;
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .ticket-chat-box-wrapper {
+        background: var(--white-color);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 30px 15px;
+    }
+    .admin-msg p {
+        margin-left: 14%;
+        max-width: 90%;
+        border-radius: 4px;
+    }
+    .user-msg-text p {
+        max-width: 90%;
+        border-radius: 4px;
+    }
+    .msg-box {
+        height: 350px;
+        overflow-y: scroll;
+        padding-left: 10px;
+    }
+    .msg-sending-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgba(80, 80, 80, 0.336);
+        padding: 20px 10px 0 10px;
+        gap: 15px;
+    }
+    .ticket-item-content {
+        border: 1px solid #DADADA;
+        padding: 20px 10px;
+        border-radius: 10px;
+    }
+}

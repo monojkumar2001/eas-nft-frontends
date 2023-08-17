@@ -27,8 +27,10 @@ import ScrollTopBtn from "./components/ScrollToTop/ScrollTopBtn";
 import NewsPage from "./Pages/NewsPage";
 import NftSaleCollectionPage from "./Pages/NftSaleCollectionPage";
 import ErrorPage from "./Pages/ErrorPage";
-// import NewsPage from "./Pages/NewsPage";
-
+import NewsPageDetails from "./Pages/NewsPageDetails";
+import CareersPage from "./Pages/CareersPage";
+import CareersPageDetails from "./Pages/CareersPageDetails";
+import PrivacyPolicyPage from "./Pages/PrivacyPolicyPage";
 
 function App() {
   useEffect(() => {
@@ -45,6 +47,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element ={<HomePage/>}/>
+          <Route path="*" element ={<ErrorPage/>}/>
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/docs" element={<KnowledgeBaseFaq data1={FaqData1} data2={FaqData2} data3={FaqData3} data4={FaqData4} data5={FaqData5} data6={FaqData6}  />}/> 
           <Route path="/docs/:id"   element={<Slug data1={FaqData1} data2={FaqData2} data3={FaqData3} data4={FaqData4} data5={FaqData5} data6={FaqData6}  />}/> 
@@ -58,8 +61,12 @@ function App() {
           <Route path="/nft-details" element={<NFTDetailsPage/>}/>
           <Route path="/my-nft-list" element ={<MyCollectionPage/>}/>
           <Route path="/news" element ={<NewsPage/>}/>
+          <Route path="/news/:id" element={<NewsPageDetails/>}/>
           <Route path="/sale-nft" element ={<NftSaleCollectionPage/>}/>
-          <Route path="*" element ={<ErrorPage/>}/>
+          <Route path="/careers" element ={<CareersPage/>}/>
+          <Route path="/careers/:id" element ={<CareersPageDetails/>}/>
+          <Route path="/privacy-policy" element ={<PrivacyPolicyPage/>}/>
+          
         </Routes>
         <Footer />
       </BrowserRouter>

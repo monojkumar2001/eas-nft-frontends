@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "../Style/myCollection.css";
 import SingleNft from "../components/Collection/SingleNft";
+import SaleNft from "../components/Collection/SaleNft";
 const NftSaleCollectionPage = () => {
   const [activeNfts, setActiveNfts] = useState(1);
   const toggleNfts = (index) => {
@@ -177,7 +178,7 @@ const NftSaleCollectionPage = () => {
           </div>
           <div className="dashboard-card-item-wrapper">
             <div className="dashboard-card-items my-collection-items">
-              <SingleNft uniqueData={filteredData} />
+              <SaleNft uniqueData={filteredData} />
             </div>
             <div className="load-more-btn-con">
               {visibleCards < uniqueData.length && (

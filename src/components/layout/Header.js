@@ -135,7 +135,7 @@ function Header() {
                         <Link to={"/contact"}>Contact</Link>
                       </li>
                       <li onClick={_toggleSidebar}>
-                        <Link to={""}>Careers</Link>
+                        <Link to={"/careers"}>Careers</Link>
                       </li>
                     </ul>
                   </div>

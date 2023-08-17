@@ -474,6 +474,9 @@ margin: 10px;
         grid-template-columns: 1fr;
         overflow-x: scroll;
     }
+    .ticket-chat-box-wrapper {
+        margin-bottom: 40px;
+    }
     .filter-nft-content .filter-nft-content-items .filter-nft-content-item {
         gap: 10px;
     
@@ -493,6 +496,11 @@ margin: 10px;
     .col-lg-9 {
         padding: 0 !important;
     }
+    .content-eas-nft-wrapper .ticket-header-item {
+       flex-direction: column;
+       gap: 20px;
+       width: 100%;
+    }
 }
 @media screen and (max-width: 768px) {
     .dashboard-card-items {
@@ -502,8 +510,54 @@ margin: 10px;
     .dashboard-card-item-wrapper {
         padding: 40px 20px;
     }
+   
+    .msg-sending-left  .request-call-msg{
+        display: inline-block;
+        padding: 7px 20px;
+    }
+    .request-call-msg  span{
+   display: none;
+    }
+    p.referral-text {
+        width: 350px;
+        overflow-x: auto;
+    }
+    .referral-input-box button{
+        padding: 0px 20px 5px 20px;
+    }
+    .content-eas-nft-wrapper .ticket-header-item {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+     }
+    .content-eas-nft-wrapper .ticket-header-item .ticket-header-left-item{
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+     }
+     .content-eas-nft-wrapper .ticket-header-item .ticket-header-left-item{
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+     }
+     .ticket-create-new-item{
+        width: 100%;
+     }
+     .ticket-create-new-item .create-ticket-btn{
+        width: 100%;
+    }
+    .ticket-header-left-item .form-group {
+        width: 100%;
+    }
+    .ticket-header-right-item {
+        width: 100%;
+    }
+    .ticket-search-input-fluid {
+  width: 100%;
+    }
+   
 }
-@media screen and (max-width: 564px) {
+@media screen and (max-width: 576px) {
     .dashboard-card-items {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -528,4 +582,16 @@ margin: 10px;
         gap: 15px;
         padding: 0 15px 15px 15px;
     }
+    .content-eas-nft-wrapper {
+        padding: 0 20px 50px 20px;
+    }
+    .referral-input-box {
+        padding: 10px 20px 10px 20px;
+        border-radius: 6px;
+        border: 1px solid rgba(0, 0, 0, 0.20);
+        background: #FFF;
+        box-shadow: 10px 14px 24px 0px rgba(175, 175, 175, 0.12);
+    }
+    
+
 }

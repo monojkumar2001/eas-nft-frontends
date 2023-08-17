@@ -38,7 +38,7 @@ const AboutPage = () => {
             <div className="about-video-item mt-4">
               <button className="custom-btn d-flex gap-2" onClick={handlePlay}>
                 <span className="video-icon-item"><FaRegPlayCircle/></span>
-                <span>View a Message from Our Founder</span>
+                <span className="video-view-text">View a Message from Our Founder</span>
               </button>
             </div>
             <Video isPlay={isPlaying} handlePlay={handlePlay}/>

@@ -123,6 +123,8 @@ background-color: var(--black-color);
  }
  .nft-description-item .nft-disc-item{
     padding: 20px;
+    height: 150px;
+    overflow-y: auto;
  }
  .nft-description-item .nft-disc-item a{
     font-family: var(--secondary-font);
@@ -172,7 +174,23 @@ background-color: var(--black-color);
     font-family: var(--secondary-font);
     margin-bottom: 10px;
 }
-
+/* ========================= Transfer ================= */
+.wallet-content-wrapper  .label-text{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    font-family: var(--secondary-font);
+}
+.wallet-content-wrapper  .label-texts{
+    font-size: 16px;
+    font-family: var(--secondary-font);
+    display: flex;
+    flex-direction: column;
+}
+.wallet-content-wrapper  .wallet-input-fluid input{
+    font-family: var(--secondary-font);
+    padding:5px 10px 10px 10px;
+}
  @media screen and (max-width: 992px) {
     .nft-details-wrapper .nft-details-img-item {
         padding: 0 0px;

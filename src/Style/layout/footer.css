@@ -76,7 +76,7 @@ text-align: center;
         display: none;
     }
     .footer-items-content{
-        margin-top: 40px;
+        margin-top: 0px;
         text-align: center;
     }
     .footer-items-content .social-media-link{
@@ -89,7 +89,7 @@ text-align: center;
         background-image: radial-gradient(at center center, #020015 0%, #141820 100%);
     }
     .footer-items-content .eas-nft-img img{
-        width: 50%;
+        width: 40%;
     }
     .footer-copy-right-wrapper .footer-terms-policy a {
         color: var(--white-color);
@@ -98,7 +98,12 @@ text-align: center;
     }
     .footer-copy-right-wrapper {
         width: 100%;
-        margin: auto;
-        text-align: center;
+        text-align: center;   
+        margin-top: 0px !important;
+    }
+}
+@media screen and (max-width: 576px) {
+    .footer-items-content .eas-nft-img img{
+        width: 35%;
     }
 }

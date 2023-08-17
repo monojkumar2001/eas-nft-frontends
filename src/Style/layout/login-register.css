@@ -10,7 +10,9 @@
   height: 100%;
   background-image: url(../../../public/images/login/login-bg.svg);
   z-index: -1;
-  top: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0px;
 }
 .login-sign-up-wrapper {
   width: 50%;
@@ -102,4 +104,23 @@
 }
 .accept-text-item .sub-dis span a:hover{
     text-decoration: underline;
+}
+@media screen and (max-width: 992px) {
+  .login-sign-up-wrapper {
+    width: 100%;
+    margin: auto;
+  }
+  .login-sign-up {
+    padding-bottom: 50px;
+}
+}
+@media screen and (max-width: 576px) {
+  .login-sign-up {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.input-fullName-fluid {
+  flex-direction: column;
+  
+}
 }

@@ -60,37 +60,6 @@
   letter-spacing: 0.3em;
   font-family: var(--secondary-font);
 }
-  
-  @media screen and (max-width: 992px) {
-    :root {
-      --l-title: 60px;
-      --p-font: 16px;
-    }
-    .section-title{
-      font-size: 50px;
-    }
-    .section-title-2{
-      font-size: 35px;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    :root {
-      --l-title: 40px;
-    }
-    .section-title{
-      font-size: 40px;
-    }
-    .section-title-2{
-      font-size: 30px;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .section-title-2{
-      font-size: 26px;
-      margin-top: 15px;
-    }
-  }
 
 
 
@@ -243,7 +212,28 @@ body {
   }
 }
 
-  
+
+/* ================ ERROR PAGE ===================== */
+.error-page{
+  padding: 150px 0 100px 0;
+  background-color: white;
+}
+.error-page-wrapper{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+  color: var(--black-color);
+}
+.error-page-wrapper .section-title{
+  color: var(--black-color);
+  font-size: 80px;
+}
+.error-page-wrapper h4{
+  font-size: 25px;
+  font-family: var(--secondary-font);
+}
   .cpy-5 {
     padding: 50px 0;
   }
@@ -332,3 +322,38 @@ body {
   }
 
   
+    
+  @media screen and (max-width: 992px) {
+    :root {
+      --l-title: 60px;
+      --p-font: 16px;
+    }
+    .section-title{
+      font-size: 50px;
+    }
+    .section-title-2{
+      font-size: 35px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    :root {
+      --l-title: 40px;
+    }
+    .section-title{
+      font-size: 40px;
+    }
+    .section-title-2{
+      font-size: 30px;
+    }
+    .scroll-up-btn {
+      right: 30px;
+      bottom: 40px;
+  }
+  }
+  @media screen and (max-width: 768px) {
+    .section-title-2{
+      font-size: 26px;
+      margin-top: 15px;
+    }
+  }

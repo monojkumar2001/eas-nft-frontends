@@ -25,8 +25,6 @@ function Video({ isPlay, handlePlay }) {
           <div className="container">
             <div className="new-ticket-content">
               <iframe
-                width="1200px"
-                height="800px"
                 frameborder="0"
                 allowfullscreen
                 allow="autoplay"

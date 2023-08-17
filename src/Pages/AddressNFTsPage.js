@@ -14,7 +14,7 @@ const AddressNFTsPage = () => {
             <div className="col-lg-7 col-md-12">
               <div className="address-nft-content">
                 <span>ADDRESS NFTS</span>
-                <h2>Bring Real-World Addresses to Web3</h2>
+                <h2 className="section-title">Bring Real-World Addresses to Web3</h2>
                 <p>
                   Do you want to own the digital rights to the iconic addresses
                   of your dreams? Any address in the world can be claimed as an

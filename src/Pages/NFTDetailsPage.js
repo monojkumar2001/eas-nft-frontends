@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { BiTime } from "react-icons/bi";
 import { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
+import TransferWallet from "../components/Collection/TransferWallet";
 const NFTDetailsPage = () => {
   const [tarits, setTarits] = useState(true);
 
@@ -126,13 +127,17 @@ const NFTDetailsPage = () => {
                             Karafuru is home to 5,555 generative arts where
                             colors reign supreme. Leave the drab reality and
                             enter the world of Karafuru by Museum of Toys.
+                            Karafuru is home to 5,555 generative arts where
+                            colors reign supreme. Leave the drab reality and
+                            enter the world of Karafuru by Museum of Toys.
                           </p>
                         </div>
                       </div>
-                      <div className="nft-buy-btn">
-                        <Link to={"/"} className="custom-btn">
+                      <div className="nft-buy-btn d-flex mt-4 align-items-center gap-2 w-100">
+                        <button className="custom-btn w-100">
                           Buy Now
-                        </Link>
+                        </button>
+                       <TransferWallet/>
                       </div>
                     </div>
                   </div>

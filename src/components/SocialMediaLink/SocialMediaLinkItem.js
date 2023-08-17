@@ -9,7 +9,7 @@ import {
 const SocialMediaLinkItem = () => {
   return (
     <>
-      <div className="social-media-link d-flex algin-items-center gap-3 mb-3">
+      <div className="social-media-link d-flex algin-items-center gap-2 mb-3">
         <a href="https://twitter.com/eas_nft" target="_blank" rel="noopener noreferrer">
           <FaTwitter />
         </a>
